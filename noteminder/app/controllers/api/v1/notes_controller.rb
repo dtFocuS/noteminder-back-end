@@ -3,4 +3,26 @@ class Api::V1::NotesController < ApplicationController
     @notes = Note.all
     render json: @notes
   end
+
+  def create
+    if note_params
+      
+    else
+
+    end
+
+  end
+
+  def show
+    note = Note.find_by(id: params[:id])
+    render json: note
+  end
+
+
+  private
+
+  def note_params
+    require(:note).permit(:title, :content);
+
+  end
 end

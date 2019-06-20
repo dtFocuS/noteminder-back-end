@@ -32,7 +32,7 @@ class Api::V1::NotesController < ApplicationController
   private
 
   def note_params
-    params.require(:note).permit(:id, :title, :content, :folder_id);
+    params.require(:note).permit(:id, :time, :content, :folder_id);
 
   end
 end

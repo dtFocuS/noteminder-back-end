@@ -6,7 +6,7 @@ class NoteSerializer < ActiveModel::Serializer
   end
 
   def to_serialized_json
-    @note.to_json(only: [:id, :title, :content, :folder_id, :time])
+    @note.to_json(only: [:id, :title, :content, :folder_id, :time, :updated_at])
 
   end
 end

@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Note.destroy_all
-Note.create(title: "note1", content: "hello im note 1", folder_id: 1)
-Note.create(title: "note2", content: "hello im note 2", folder_id: 1)
-Note.create(title: "note3", content: "hello im note 3", folder_id: 2)
-Note.create(title: "note4", content: "hello im note 4", folder_id: 2)
-Note.create(title: "note5", content: "hello im note 5", folder_id: 3)
-Note.create(title: "note6", content: "hello im note 6", folder_id: 4)
+Note.create(content: "hello im note 1", folder_id: 1, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "hello im note 2", folder_id: 1, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "hello im note 3", folder_id: 2, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "hello im note 4", folder_id: 2, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "hello im note 5", folder_id: 3, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "hello im note 6", folder_id: 4, time: Time.now.strftime("%b %d %Y, at %R"))

@@ -7,7 +7,7 @@ class FolderSerializer < ActiveModel::Serializer
 
   def to_serialized_json
     @folder.to_json(:include => {
-      :notes => {:only => [:id, :title, :content, :folder_id]}
+      :notes => {:only => [:id, :content, :time, :folder_id]}
     }, :except => [:updated_at])
 
   end

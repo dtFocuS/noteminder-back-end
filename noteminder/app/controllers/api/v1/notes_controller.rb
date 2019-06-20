@@ -5,8 +5,9 @@ class Api::V1::NotesController < ApplicationController
   end
 
   def create
-    if note_params
-
+    note = Note.new(note_params)
+    if note.save
+      render json: NoteSerializer.new(note).to_serialized_json
     else
 
     end

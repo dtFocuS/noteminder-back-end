@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#Note.destroy_all
+Note.destroy_all
 Note.create(title: "note1", content: "hello im note 1", folder_id: 1)
 Note.create(title: "note2", content: "hello im note 2", folder_id: 1)
 Note.create(title: "note3", content: "hello im note 3", folder_id: 2)

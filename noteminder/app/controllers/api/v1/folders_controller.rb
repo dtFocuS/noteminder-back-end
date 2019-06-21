@@ -21,6 +21,12 @@ class Api::V1::FoldersController < ApplicationController
 
   end
 
+  def destroy
+    folder = Folder.find_by(id: params[:id])
+    folder.destroy
+    render json: FolderSerializer.new(folder).to_serialized_json
+  end
+
 
   private
 

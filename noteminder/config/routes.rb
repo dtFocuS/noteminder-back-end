@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :users, only: [:index, :update, :show, :create, :destroy]
       resources :folders, only: [:index, :update, :show, :create, :destroy]
       resources :notes, only: [:index, :update, :show, :create, :destroy]
+      resources :reminders, only: [:index, :update, :show, :create, :destroy]
     end
   end
 end

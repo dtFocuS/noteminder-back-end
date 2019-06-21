@@ -30,8 +30,13 @@ class Api::V1::NotesController < ApplicationController
 
   def destroy
     note = Note.find_by(id: params[:id])
-    note.destroy
-    render json: NoteSerializer.new(note).to_serialized_json
+    #byebug
+    if note.destroy
+      render json: NoteSerializer.new(note).to_serialized_json
+    else
+      #byebug
+      puts error.full_message
+    end
   end
 
   private

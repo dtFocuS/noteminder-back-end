@@ -5,11 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Reminder.destroy_all
 Note.destroy_all
+
 Note.create(content: "hello im note 1", folder_id: 1, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "hello im note 2", folder_id: 1, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "hello im note 3", folder_id: 2, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "hello im note 4", folder_id: 2, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "hello im note 5", folder_id: 3, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "hello im note 6", folder_id: 4, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "hello im note 2", folder_id: 2, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "hello im note 3", folder_id: 5, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "hello im note 4", folder_id: 7, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "hello im note 5", folder_id: 4, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "hello im note 6", folder_id: 57, time: Time.now.strftime("%b %d %Y, at %R"))

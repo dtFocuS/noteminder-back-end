@@ -8,9 +8,11 @@
 Reminder.destroy_all
 Note.destroy_all
 
-Note.create(content: "hello im note 1", folder_id: 1, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "hello im note 2", folder_id: 2, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "hello im note 3", folder_id: 5, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "hello im note 4", folder_id: 7, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "hello im note 5", folder_id: 4, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "hello im note 6", folder_id: 57, time: Time.now.strftime("%b %d %Y, at %R"))
+a1 = User.create(name: 'Name')
+
+f1 = Folder.create(name: "Credit Card Information", user_id: a1.id)
+
+Note.create(content: "Credit Card", folder_id: f1.id, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "Debit Card", folder_id: f1.id, time: Time.now.strftime("%b %d %Y, at %R"))
+Note.create(content: "Walmert Gift Card", folder_id: f1.id, time: Time.now.strftime("%b %d %Y, at %R"))
+

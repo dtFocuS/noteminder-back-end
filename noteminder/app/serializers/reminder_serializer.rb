@@ -5,6 +5,6 @@ class ReminderSerializer < ActiveModel::Serializer
   end
 
   def to_serialized_json
-    @reminder.to_json(only: [:id, :date, :time, :location, :priority, :note_id])
+    @reminder.to_json(only: [:id, :date, :time, :priority, :note_id])
   end
 end

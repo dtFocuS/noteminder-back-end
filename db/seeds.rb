@@ -10,7 +10,7 @@ Folder.destroy_all
 Reminder.destroy_all
 Note.destroy_all
 
-a1 = User.create(name: 'Name')
+a1 = User.create(name: 'Danny')
 
 f1 = Folder.create(name: "Credit Card Information", user_id: a1.id)
 

@@ -10,11 +10,11 @@ Folder.destroy_all
 Reminder.destroy_all
 Note.destroy_all
 
-a1 = User.create(name: 'Danny')
+# a1 = User.create(name: 'Danny')
 
-f1 = Folder.create(name: "My Notes", user_id: a1.id)
+# f1 = Folder.create(name: "My Notes", user_id: a1.id)
 
-Note.create(content: "Test Note 1", folder_id: f1.id, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "Test Note 2", folder_id: f1.id, time: Time.now.strftime("%b %d %Y, at %R"))
-Note.create(content: "Test Note 3", folder_id: f1.id, time: Time.now.strftime("%b %d %Y, at %R"))
+# Note.create(content: "Test Note 1", folder_id: f1.id, time: Time.now.strftime("%b %d %Y, at %R"))
+# Note.create(content: "Test Note 2", folder_id: f1.id, time: Time.now.strftime("%b %d %Y, at %R"))
+# Note.create(content: "Test Note 3", folder_id: f1.id, time: Time.now.strftime("%b %d %Y, at %R"))
 
